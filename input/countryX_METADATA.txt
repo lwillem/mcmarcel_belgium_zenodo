@@ -1,0 +1,9 @@
+IMPORTANT NOTE:
+To facilitate public access to model methods while preserving data confidentiality 
+and limiting analytical validity, we applied stochastic input data perturbation, 
+adding non-systematic noise to key parameters. This approach renders the output 
+epidemiologically non-actionable while retaining internal consistency for 
+methodological replication.
+
+All country-specific files (e.g. with tag BEL, ENG, ...) that are perturbed are 
+marked with an X after the ISO3 code (e.g. BELX, ENGX, ...).

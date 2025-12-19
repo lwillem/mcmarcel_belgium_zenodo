@@ -1,0 +1,6 @@
+population,population_code,country_iso,target_population,year,stillbirth_rate,incomplete_maternal_transfer_rate
+Belgium,BEL,BEL,126644,2021,0.004177527,0
+Belgium,BEL,BEL,108680,2024,0,0
+Flanders,BEL_FLA,BEL,61863,2024,0,0
+Wallonia,BEL_WAL,BEL,32909,2024,0,0
+Brussels,BEL_BXL,BEL,13908,2024,0,0

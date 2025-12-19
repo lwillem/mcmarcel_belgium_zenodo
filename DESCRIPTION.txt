@@ -1,0 +1,7 @@
+Title: McMarcel - BELGIUM 
+Version: z.1.0
+Authors: Lander Willem, Xiao Li, Joke Bilcke, Philippe Beutels. CHERMID, University of Antwerp, Belgium
+Maintainer: Lander Willem <lander.willem@uantwerpen.be>
+Description: This project aims to analyse the cost-effectiveness of RSV vaccination campaigns. The acronym McMarcel stands for 'Multi-Country Model Application for RSV Cost-Effectiveness poLicy'.
+License: GPL-3
+
