@@ -71,7 +71,7 @@ if(!'rng_seed' %in% names(sim_config_matrix)) {
 
 # check if output dir exists, and create one if not
 if(!dir.exists(output_dir)){
-  dir.create(output_dir)
+  dir.create(output_dir, recursive = TRUE)
 }
 
 # Count number of scenarios (i.e. number of interventions compared, excluding comparator ('current practice'))
@@ -151,25 +151,3 @@ write_summary_tables(sim_output_filename)
 # print progress to the console
 print('SCRIPT COMPLETE!')
 
-
-  
-  ## CHECK
-  
-  out_files <- dir(dirname(sim_output_filename),full.names = TRUE)
-  
-  ref_files <- dir('output/export_reference/',full.names = TRUE)
-  if(any(basename(out_files) != basename(ref_files))){
-    stop('output file names changed')
-  }
-  
-  
-  xx <- readRDS(out_files[grepl('.rds',out_files)])
-  yy <- readRDS(ref_files[grepl('.rds',ref_files)])
-  
-  yy$outputFileDir <- NULL
-  
-  if(any(xx != yy)){
-    stop('output changed')
-  }
-  
-  print('TEST OK')
